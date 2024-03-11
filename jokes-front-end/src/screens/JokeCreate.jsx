@@ -32,13 +32,15 @@ function JokeCreate() {
     <div className="JokeCreate">
       <h1>Add a cure cat in our Database!</h1>
       <form onSubmit={handleSubmit}>
-        <input 
-        type="text"
-        placeholder="Please add the jokes category"
-        name="category"
-        value={joke.category}
-        onChange={handleChange}
-        />
+	  <div>
+	  	<label htmlFor="cateogory">Choose a Category:</label>
+        	<select name="category" id="category" onChange={handleChange}> 
+        		<option value = "general">General</option>
+	  		<option value = "programming">Programming</option>
+	  		<option value = "dad">Dad</option>
+			<option value = "knock-knock">Knock Knock</option>
+		</select>
+	  </div>
         <input 
         type="text"
         placeholder="Please add the setup"
