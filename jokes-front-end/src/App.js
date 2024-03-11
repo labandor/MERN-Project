@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import Nav from './components/Nav.jsx';
+import Home from  "./screens/Home.jsx";
+import Jokes from "./screens/Jokes.jsx";
+import JokePunchLine from "./screens/JokePunchLine.jsx";
+import JokeCreate from "./screens/JokeCreate.jsx";
+import JokeEdit from "./screens/JokeEdit.jsx";
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
+import React from 'react';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/cats" element={<Jokes />} />
+        <Route path="/cats/:id" element={<JokePunchLine />} />
+        <Route path="/add-cat" element={<JokeCreate />} />
+        <Route path="/cats/:id/edit" element={<JokeEdit />} />
+      </Routes>
     </div>
   );
 }
