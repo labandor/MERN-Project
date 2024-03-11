@@ -4,7 +4,7 @@ import Joke from "../components/Joke.jsx"
 
 function Jokes() {
 
-  const [jokes, setjokes] = useState([]);
+  const [jokes, setJoke] = useState([]);
 
   useEffect(() => {
     fetchJokes();
@@ -12,7 +12,7 @@ function Jokes() {
 
   async function fetchJokes(){
     const allJokes = await getJokes();
-    setJokes(allJokes);
+    setJoke(allJokes);
   }
 
   return (
@@ -21,7 +21,7 @@ function Jokes() {
       <div>
         {
           jokes.map((joke) =>(
-            <Joke joke={joke} key={joke.id}/>
+            <Joke joke={joke} key={joke._id}/>
           ))
         }
       </div>

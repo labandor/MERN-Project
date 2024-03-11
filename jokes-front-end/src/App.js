@@ -15,10 +15,10 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/cats" element={<Jokes />} />
-        <Route path="/cats/:id" element={<JokePunchLine />} />
-        <Route path="/add-cat" element={<JokeCreate />} />
-        <Route path="/cats/:id/edit" element={<JokeEdit />} />
+        <Route path="/jokes" element={<Jokes />} />
+        <Route path="/jokes/:id" element={<JokePunchLine />} />
+        <Route path="/add-joke" element={<JokeCreate />} />
+        <Route path="/jokes/:id/edit" element={<JokeEdit />} />
       </Routes>
     </div>
   );

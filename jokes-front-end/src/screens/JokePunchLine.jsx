@@ -28,7 +28,7 @@ function JokePunchLine() {
     <div>
       <h1>{joke.setup}</h1>
       <h2>{joke.punchline}</h2>
-      <p>{joke.category}</p>
+      <p>Category: {joke.category} joke</p>
       <div>
         <Link to={`/jokes/${id}/edit`}>
           <button>EDIT</button>

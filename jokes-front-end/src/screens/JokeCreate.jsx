@@ -59,4 +59,4 @@ function JokeCreate() {
   );
 }
 
-export default JokeEdit;
+export default JokeCreate;
