@@ -55,7 +55,7 @@ function JokeCreate() {
         value={joke.punchline}
         onChange={handleChange}
         />
-        <button type="submit">Create your Cat!</button>
+        <button className="button" type="submit">Create your Joke!</button>
       </form>
     </div>
   );
