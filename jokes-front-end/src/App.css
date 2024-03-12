@@ -2,15 +2,8 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+	background-image: url("https://wallsneedlove.com/cdn/shop/products/w0263_1s_Nautical-Waves-Wallpaper-for-Walls-Waves-of-Chic_Repeating-Pattern-Sample-1.jpg?v=1604091534");
 }
 
 .App-header {
@@ -28,11 +21,46 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Home img {
+	max-width: 100%;
+}
+
+.Home {
+}
+
+a:link, a:visited {
+	color: black;
+	text-decoration: none;
+	padding-right: 10px;
+}
+
+.Jokes {
+}
+
+Nav {
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+.Jokes {
+	max-width: 35%;
+	margin: auto;
+	background-color: white;
+	border: 2px black bold;
+	border-style: dotted;
+}
+
+.button {
+	border:none;
+	background-color: lightblue;
+}
+
+@media(max-width:1050px) {
+	.Jokes{
+		max-width: 50%;
+		margin: auto;
+		background-color: white;
+		border: 2px black bold;
+		border-style: dotted;
+	}
 }

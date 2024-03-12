@@ -7,6 +7,7 @@ import JokeEdit from "./screens/JokeEdit.jsx";
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import React from 'react';
+import RandoJoke from "./screens/RandoJoke.jsx";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/jokes/:id" element={<JokePunchLine />} />
         <Route path="/add-joke" element={<JokeCreate />} />
         <Route path="/jokes/:id/edit" element={<JokeEdit />} />
+	<Route path="/rando-joke" element={<RandoJoke />} />
       </Routes>
     </div>
   );

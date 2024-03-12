@@ -7,6 +7,7 @@ function Nav() {
       <NavLink to="/">Home</NavLink>
       <NavLink to="/jokes">Jokes</NavLink>
       <NavLink to="/add-joke">Add New Joke</NavLink>
+      <NavLink to="/rando-joke">Random Joke</NavLink>
     </nav>
   );
 }

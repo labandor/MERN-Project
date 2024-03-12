@@ -18,7 +18,7 @@ function Jokes() {
   return (
     <div className="Jokes">
       <h1>All the Jokes</h1>
-      <div>
+      <div className="JokesLink">
         {
           jokes.map((joke) =>(
             <Joke joke={joke} key={joke._id}/>

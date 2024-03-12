@@ -31,9 +31,9 @@ function JokePunchLine() {
       <p>Category: {joke.category} joke</p>
       <div>
         <Link to={`/jokes/${id}/edit`}>
-          <button>EDIT</button>
+          <button className="button">EDIT</button>
         </Link>
-        <button onClick={handleDelete}>DELETE</button>
+        <button className="button" onClick={handleDelete}>DELETE</button>
       </div>
     </div>
   );
